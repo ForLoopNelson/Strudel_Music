@@ -15,3 +15,4 @@ stack(
 .scale("F:minor")
 .s("gm_tremolo_strings").delay("<2 .35 0 1>").lpf("2000").gain(.54)
 )
+
