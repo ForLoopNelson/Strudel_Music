@@ -24,6 +24,17 @@ n("<d3 a2 d2 g4>").layer(
     )
 )
 
+let synth2 = 
+  stack(
+    note("g2 d2 a2 d2").rev().layer(
+x=>x.s("z_sawtooth").vib(4).lpf("1000"),
+x=>x.s("pulse").add(note(9))
+),
 
-stack(drums,arrange([4,synth])
+note("d5 f5 a5 [d3, g3]").rev()
+.s("piano, gm_electric_guitar_muted")
+  )
+
+
+stack(drums,arrange([4,synth],[4,synth2])
   )
