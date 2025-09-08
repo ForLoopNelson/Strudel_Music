@@ -4,13 +4,13 @@ setcpm(100/4 )
 
 let drums =
   stack(s("lt, bd bd*4").bank("bossdr550"),
-       s("~ sd,hh*8").bank("akaixr10").lpf("5000").color("cyan")._punchcard({width:900}))
+       s("~ sd,hh*8").bank("akaixr10").lpf("5000").color("#899CB0")._punchcard({width:900}))
 
 
 let synth =
   stack (
 note("<d3 a2 d2 g2>").layer(
-x=>x.s("z_sawtooth").vib(4).lpf("2000"),
+x=>x.s("z_sawtooth").vib(4).lpf("2000")._spiral({ steady: .50 }),
 x=>x.s("pulse").add(note(9))
 ),
 
@@ -19,7 +19,7 @@ note("d5 f5 a5 [d3, g3]")
 
 
 n("<d3 a2 d2 g4>").layer(
-      x=>x.s("gm_voice_oohs").phaser("<1 5 8 10>").scope(),
+      x=>x.s("gm_voice_oohs").phaser("<1 5 8 10>"),
       x=>x.s("gm_pad_choir").add(note(12))
     )
 )
