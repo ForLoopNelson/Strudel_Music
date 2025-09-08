@@ -4,7 +4,7 @@ setcpm(100/4 )
 
 let drums =
   stack(s("lt, bd bd*4").bank("bossdr550"),
-       s("~ sd,hh*8").bank("akaixr10").lpf("5000").color("#899CB0")._punchcard({width:900}))
+       s("~ sd,hh*8").bank("akaixr10").lpf("5000").color("#B3E9F2")._punchcard({width:900}))
 
 
 let synth =
