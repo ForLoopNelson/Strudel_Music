@@ -2,11 +2,9 @@
 
 setcpm(100/4 )
 
-setcpm(100/4 )
-
 let drums =
   stack(s("lt, bd bd*4").bank("bossdr550"),
-       s("~ sd,hh*8").bank("akaixr10").lpf("5000"))
+       s("~ sd,hh*8").bank("akaixr10").lpf("5000").color("cyan")._punchcard({width:900}))
 
 
 let synth =
@@ -17,11 +15,11 @@ x=>x.s("pulse").add(note(9))
 ),
 
 note("d5 f5 a5 [d3, g3]")
-.s("piano, gm_electric_guitar_muted"),
+.s("piano, gm_electric_guitar_muted")._punchcard(),
 
 
 n("<d3 a2 d2 g4>").layer(
-      x=>x.s("gm_voice_oohs").phaser("<1 5 8 10>"),
+      x=>x.s("gm_voice_oohs").phaser("<1 5 8 10>").scope(),
       x=>x.s("gm_pad_choir").add(note(12))
     )
 )
