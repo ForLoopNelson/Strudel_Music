@@ -13,7 +13,9 @@ const synth1 =
 
 const synth2 = 
   stack(
-    note("d1 f# g2 d2 ").fast(2).s("sqr")
+    note("d d g2 d#").fast(2).s("gm_pad_bowed"),
+    note("f4 f2 d#3 d").fast(2).s("gm_electric_bass_pick"),
+    note("[d f a] d3 d").s("gm_lead_6_voice")
   )
 
 
