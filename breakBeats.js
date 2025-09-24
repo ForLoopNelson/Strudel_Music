@@ -1,6 +1,5 @@
 //attempt to learn break beats from watching clips of switch angel
 
-setGainCurve(x => Math.pow(x,2))
 
 
 setCpm(170/4)
