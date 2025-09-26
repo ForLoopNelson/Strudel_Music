@@ -10,7 +10,9 @@ let drums =
              s("hh:4!8").bank("dr220"))
 
 
-let bass = note("e3 g#3 d#3 [a4, c#4]").sound("gm_cello, gm_synth_bass_2")
+let bass = 
+    stack(note("e3 g#3 d#3 [a4, c#4]").sound("gm_cello, gm_synth_bass_2"),
+              note("e!2 f#3 a# c4 e4!2 d#4").fast(2).rev().s("gm_voice_oohs"))
 
 let synth = 
     stack(note("<e4 e5 c#4 b4>").s("gm_pad_halo"),
