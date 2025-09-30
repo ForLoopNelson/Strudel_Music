@@ -26,4 +26,4 @@ let voice =
 
 let voice2 = note("e g# b e4 c#5 d#4").s("gm_pad_choir")
 
-arrange([2,bass],[4,stack(drums,voice,synth)])
+arrange([2,bass],[4,stack(drums,voice,synth)],[2,stack(drumIntro,voice,voice2)])
