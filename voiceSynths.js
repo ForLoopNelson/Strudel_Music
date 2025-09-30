@@ -24,6 +24,7 @@ let voice =
     stack(note("e!2 f#3 a# c4 e4!2 d#4").fast(1).s("gm_voice_oohs").color("#c8afed").pitchwheel(),
               note("[e g# b] e3 a#4").s("gm_synth_choir").pan(.35))
 
-let voice2 = note("e g# b e4 c#5 d#4").s("gm_pad_choir")
+let voice2 = stack(note("e g# b e4 c#5 d#4").s("gm_pad_choir").jux(rev),
+             note("a#3 b3 e2 c#2 d#2 f#2").s("gm_pan_flute").jux(press).orbit(2))
 
-arrange([2,bass],[4,stack(drums,voice,synth)],[2,stack(drumIntro,voice,voice2)])
+arrange([2,bass],[4,stack(drums,voice,synth)],[2,stack(drumIntro,voice,voice2)],[4,stack(drums,synth,bass)])
