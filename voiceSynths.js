@@ -23,4 +23,6 @@ let voice =
     stack(note("e!2 f#3 a# c4 e4!2 d#4").fast(1).s("gm_voice_oohs"),
               note("[e g# b] e3 a#4").s("gm_synth_choir"))
 
+let voice2 = note("e g# b e4 c#5 d#4").s("gm_pad_choir")
+
 arrange([2,bass],[4,stack(drums,voice,synth)])
