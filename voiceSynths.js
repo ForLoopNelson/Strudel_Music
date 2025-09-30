@@ -1,8 +1,9 @@
-
-
 setCpm(110/4)
 
-
+let drumIntro = 
+    stack(s("bd:1").beat("0,3,8,12",16),
+          s("sd:2").beat("2,6,10?",16),
+          s("hh:4!8").bank("ddr30"))
 
 let drums =
     stack(s("bd:1").beat("0,7?,10,14?",16),
