@@ -21,3 +21,15 @@ stack(
    polymeter("c3 f#3 g3 a3 e3 g4", "c3 a3").note()
    .s("gm_acoustic_guitar_nylon").jux(press).pan(.55)
    .gain(.50).release("<1 .15>").delay(".4"))
+
+let intro =
+  stack(
+    note("c2/2").s("gm_pad_choir").decay(.2).sustain("<.6>").delay(".2"))
+
+let strings =
+  stack(
+    note("c2/4 g3/2 d4/2 c2").s("gm_pad_warm").gain(.5).pan(.35)
+  )
+  
+
+arrange([2,poly],[1,intro],[8,stack(strings,piano)])
