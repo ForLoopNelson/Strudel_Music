@@ -14,15 +14,19 @@ let tone =
 stack(note("d2!2 f#4 d2 d3 d2 d3 d2").s("gm_synth_bass_1"),
       note("d3/2 g2 b2 c#3 d3").s("supersaw"))
 
+let tone2 =
+stack(note("d2!2 c#4 d2 d3 d2 d3 e3").s("gm_synth_bass_1"),
+      note("d3/2 g2 b2 f#3 d3").s("supersaw"))
+
 let pulse =
-stack(note("d5 f#2 c#4 d4 d3 g4 d5 e5 d4 e4 c#3 ").s("pulse").fast(4).gain(.45))
+stack(note("d5 f#2 c#4 d4 d3 g4 d5 e5 d4 e4 c#3 ").s("pulse").fast(4).gain(.65))
 
 
 
 
 
 
-stack(drums,arrange([4,stack(tone,pulse)]))
+stack(drums,arrange([4,stack(tone,pulse)],[4,stack(tone2,pulse.rev())]))
 
 
 
