@@ -1,4 +1,4 @@
-setcpm(110/4 )
+setcpm(110 / 4)
 
 
 note(`<[c4 [f#4 a4] d3 [b3 c4]]
