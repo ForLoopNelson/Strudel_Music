@@ -5,7 +5,7 @@ let noise = stack(note("ab cb eb gb ab bb db ab2@3").s("gm_pad_poly"),
 
 
 let highs = stack(note("ab4@3 cb4 db3 ab3@2 cb3@3").s("gm_glockenspiel"),
-                  note("ab4@3 db4@4 cb4@1 ab5").s("gm_synth_choir"))
+                  note("ab4@3 db4!4 cb4@2").s("gm_synth_choir"))
 
 
 
