@@ -3,7 +3,7 @@ setcpm(70/4)
 let noise = stack(note("ab cb eb gb ab bb db ab2@3").s("gm_pad_poly"),
                   note("ab2!3 eb2!3 db!3 cb!3").s("gm_pad_warm"))
 
-let noise2 = stack(note("ab cb eb gb ab bb db ab2@3").s("gm_pad_poly").jux(rev).distort("<1.9>").pan(.37).gain(.18),
+let noise2 = stack(note("ab cb eb gb ab bb db ab2@3").s("gm_pad_poly").jux(rev).distort("<1.9>").pan(.37).gain(.13),
                   note("ab2!3 eb2!3 db!3 cb!3").s("gm_pad_warm").pan(.77).crush("<5.5>"))
 
 
