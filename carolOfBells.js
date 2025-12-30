@@ -17,4 +17,4 @@ let p3 = stack(
 
 
 
-arrange([2,p1],[2,p2],[2,p3])
+arrange([2,stack(p1,p2)],[2,p3])
