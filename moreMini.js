@@ -10,6 +10,7 @@ let piano = stack(
        [d2! [a4 ~ c2] f3!]
        [g3/2]>`).s("piano"))
 
-let str = stack(note("d4 [a3 bb3] e4").s("gm_synth_strings_2"))
+let str = stack(note("d4 [a3 bb3] e4 [f3@3 d2]").s("gm_synth_strings_2"),
+                note("d3@3 a3 bb3@2").s("gm_tuba"))
 
 arrange([4,stack(piano,str)])
