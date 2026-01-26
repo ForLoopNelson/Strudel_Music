@@ -12,6 +12,7 @@ let pad1 = stack(note("d2!2 f#3 a4 d3 d2 d3 d2").s("gm_music_box"),
 let pad2 = stack(note("d5 a3 e4 f#3 d4!2 g3 d4").s("gm_epiano2"),
       note("<d3 a3>").s("gm_fx_soundtrack").transpose("<0 -2 3 2>"))
 
+let synth = stack(note("<d3 b2> a3!2 <a2>").s("pulse"))
 
 
 
@@ -19,4 +20,5 @@ let pad2 = stack(note("d5 a3 e4 f#3 d4!2 g3 d4").s("gm_epiano2"),
 
 
 
-arrange([2,pad2],[4,stack(drums,pad1,pad2)])
+
+arrange([2,pad2],[4,stack(drums,pad1,pad2,synth)])
