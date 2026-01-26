@@ -10,7 +10,7 @@ let pad1 = stack(note("d2!2 f#3 a4 d3 d2 d3 d2").s("gm_music_box"),
       note("d3/2 g2 b2 c#3 d3").s("gm_pad_choir"))
 
 let pad2 = stack(note("d5 a3 e4 f#3 d4!2 g#3 d4").s("gm_epiano2"),
-      note("d3/2 g2 b2 c#3 d3").s("gm_pad_halo"))
+      note("d3/2 g2 b2 c#3 d3").s("gm_pad_halo").transpose("<0 -2 3 0>"))
 
 
 
