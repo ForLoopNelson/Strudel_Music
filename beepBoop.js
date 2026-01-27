@@ -1,3 +1,6 @@
+//add more melodies. panning and maybe change the drum samples
+
+
 setcpm(70/4/2)
 
 let drums = stack(s("bd:2").beat("0,2,4,6,8,10,11",12),
