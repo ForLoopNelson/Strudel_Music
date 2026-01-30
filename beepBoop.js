@@ -13,5 +13,8 @@ let melody = stack(
              note("e3!5 d3 e2!5 f#3 a3 a3 e4@2").s("gm_fretless_bass"))
 
 
+// let saws = stack(note("e2 f2 f2 b2 b2 c2 e3").fast(2).s("z_sawtooth"))
 
-stack(drums,arrange([2,melody],[4,stack(hh,melody)]))
+
+
+stack(drums,arrange([1,stack(melody)],[4,stack(hh,melody.rev())]))
