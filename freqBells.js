@@ -6,7 +6,7 @@ let synthFreq = stack(
 
 
 let organs = stack(
-  freq("<350 [375] 320 [500 790]>*8").s("gm_percussive_organ")
+  freq("<350 [375] 320 [500 790]>*4").s("gm_percussive_organ").pan(.26).transpose("<2 -1 2 1>")
 )
 
 
