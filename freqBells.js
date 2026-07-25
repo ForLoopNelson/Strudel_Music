@@ -1,8 +1,8 @@
 setcpm(100/4)
 
 let synthFreq = stack(
-freq("<200 [300,500] 400 [500,<600 670 712 670>]>*8").s("gm_glockenspiel"),
-freq("<600 [300,200] 600 [800,<300 450 650 720>]>*4").s("gm_shakuhachi"))
+  freq("<200 [240,800, 600 <400, 450, 200, 1000>] 470 [500,<300 1270 312 470>]>*8").s("gm_glockenspiel"),
+  freq("<600 [300,200] 600 [800,<300 450 650 720>]>*4").s("sqr").seg(16).lpf(tri.range(600, 3000).slow(2)))
 
 
 let organs = stack(
