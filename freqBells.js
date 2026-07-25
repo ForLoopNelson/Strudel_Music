@@ -17,8 +17,11 @@ let organs = stack(
 )
 
 
+let bass = stack(
+  freq("<300 [500 540] 470 500 >*4").s("gm_lead_8_bass_lead").gain(.48).pan(.78).transpose("<1 -2 0 2>")
+)
 
 
 
 
-arrange([4,stack(synthFreq,organs,drums)])
+arrange([2,stack(synthFreq,organs)],[4,stack(bass,synthFreq,organs,drums)])
