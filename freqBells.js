@@ -1,8 +1,8 @@
 setcpm(100/4)
 
 let drum = stack(s("bd:1").beat("0,4?,10",16).duck("3"),
-             s("sd:2").beat("2,8?,12",16),
-             s("hh:12!16").linger("<.15 .1 .12>").bank("akaimpc60").orbit(4)
+             s("sd:2").beat("2,6?,12",16).distort("5: .3"),
+             s("hh:12!16").crush("<7 8>").bank("akaimpc60").orbit(4)
   
 )
 
