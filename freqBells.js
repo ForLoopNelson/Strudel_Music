@@ -1,6 +1,6 @@
 setcpm(100/4)
 
-let drum = stack(s("bd:1").beat("0,4?,10",16).duck("3"),
+let drum = stack(s("bd:1").beat("0,3,4?,10",16).duck("3"),
              s("sd:2").beat("2,6?,12",16).distort("5: .3"),
              s("hh:12!16").crush("<7 8>").bank("akaimpc60").orbit(4)
   
@@ -34,6 +34,8 @@ let synthBreak = stack(
 
 
 
+
 arrange([2,stack(synthFreq,organs)],
         [4,stack(bass,synthFreq,organs,drums)],
-        [2,stack(bass.crush("<4 7>"),synthBreak.transpose("<-1 2 0 1>"), drum)])
+        [2,stack(bass.crush("<4 7>"),synthBreak.transpose("<-1 2>"), drum)],
+        [2,stack(organs.rev().seg(16).transpose("<2 -1>"), synthFreq.slow(2))])
