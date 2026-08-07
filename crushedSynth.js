@@ -7,4 +7,6 @@ stack(s("bd:3").beat("0,7?,10",16).duck("3"),
 
 let synth = stack(note("a3!3 c3 e3 f3").s("gm_synth_bass_2").seg(16).lpf("2000").crush("<3.8>"))
 
-arrange([4,stack(drums,synth)])
+let pad = stack(note("e5!2 c5!3 a4!2 d3").s("z_triangle").fast(2))
+
+arrange([4,stack(drums,synth,pad)])
