@@ -9,4 +9,6 @@ let synth = stack(note("a3!3 c3 e3 f3").s("gm_synth_bass_2").seg(16).lpf("800").
 
 let pad = stack(note("f5!3 ~ ~ a4 ~ c5!2 ~ ~").s("gm_pad_choir").pan(.85))
 
-arrange([4,stack(drums,synth,pad)])
+let sine = stack(note("e5!2 c5!3 a4!2 d3").s("z_sine").fast(2))
+
+arrange([2,stack(synth,pad)],[4,stack(drums,synth,sine)])
